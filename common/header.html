@@ -29,9 +29,10 @@
       )
       .replace(/\-\-+/g, "-")
       .replace(/^\-/, "")
-      .replace(/\-$/, "");
+      .replace(/\-$/, "")
+      .randString(4);
 
-    return cleanItem + randString(4);
+    return cleanItem;
   };
 
   const createAnchors = id => {
